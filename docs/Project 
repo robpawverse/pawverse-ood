@@ -1,0 +1,19 @@
+/sdp-ood-system
+├── /core
+│   ├── Server.js  ✅ (NEW Class-based Server)
+│   ├── ServiceLoaderProcessor.js  ✅ (Handles Dynamic Service Loading)
+│   ├── CodecManager.js  ✅ (Handles Encoding/Decoding)
+│   ├── DataObject.js  ✅ (Encapsulates Data Structure)
+│   ├── logger.js  ✅ (Logging Utility)
+│   ├── processor.js  ❌ (Remove this—it's replaced by ServiceLoaderProcessor)
+│
+├── /services  ✅ (Contains all modular services)
+│   ├── deviceService.js
+│   ├── feedbackService.js
+│   ├── orderService.js
+│   ├── userService.js
+│   ├── Service.js  ✅ (Base Class for Services)
+│
+├── client.js  ✅ (Handles outgoing requests)
+├── server.js  ✅ (ENTRY POINT - Starts the SDP Server)
+

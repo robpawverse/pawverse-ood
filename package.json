@@ -1,0 +1,25 @@
+{
+  "name": "sdp-ood-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "js-yaml": "^4.1.0",
+    "msgpack5": "^6.0.2",
+    "nanoid": "^5.1.2",
+    "protobufjs": "^7.4.0",
+    "redis": "^4.7.0",
+    "winston": "^3.17.0",
+    "ws": "^8.18.1",
+    "xml2js": "^0.6.2",
+    "zeromq": "^6.3.0"
+  }
+}

@@ -1,0 +1,25 @@
+User(id="user-123")
+  : meta(created_at="2025-03-01T12: 00: 00Z", role="standard_user")
+  : actions(post_notice(), comment(), rate())
+  : data(display_name="Happy User", location="New York")
+---
+Breeder(id="user-456") extends User
+  : meta(verified="True", verification_date="2025-02-01")
+  : data(available_puppies=5)
+  : actions(highlight_notice(), priority_listing())
+---
+Notice(id="notice-001")
+  : meta(created_at="2025-03-02T10: 30: 00u", visibility="public")
+  : actions(publish(), archive(), comment())
+  : data(title=" Labrador Puppies Available", type= " adoption ")
+  : relationships(author="user-123")
+---
+Comment(id="comment-555") extends Notice1
+  : meta(created_at="2025-03-03T14: 00: 00Z")
+  : data(content="Great breeder! Highly recommend!")
+  : relationships(author="user-999", notice="notice-001")
+---
+PawPoints(id="user-123-credits") extends OODObject
+  : meta(currency="PawPoints")
+  : actions(purchase(), redeem(), transfer())
+  : data(balance=250)

@@ -1,0 +1,12 @@
+/sdp-ood-system
+  ├── core/
+  │   ├── OODParser.js         # 🔹 Main parser
+  │   ├── OODObject.js         # 🔹 OOD Object with dynamic format execution
+  │   ├── OODOutputManager.js  # 🔹 Plugin-based format system
+  │   ├── formats/             # 🔹 Dynamic Format Plugins
+  │   │   ├── json.js          # ✅ JSON Export
+  │   │   ├── yaml.js          # ✅ YAML Export
+  │   │   ├── xml.js           # ✅ XML Export
+  │   │   ├── msgpack.js       # ✅ MsgPack Export
+  │   │   ├── protobuf.js      # ✅ Protobuf Export (Placeholder)
+  ├── testOOD.js               # 🔹 Test Script

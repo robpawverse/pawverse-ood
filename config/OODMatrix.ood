@@ -1,0 +1,21 @@
+OODMatrix(
+   id="ood-matrix-root" 
+) : meta(
+   created_at="2025-03-05T02 : 10 : 00Z" 
+) : data(
+    User={ inherits=[],
+  actions=["postNotice",
+  "comment",
+  "rate"],
+  relationships=[] },
+  Breeder={ inherits=["User"],
+  actions=["highlightNotice",
+  "priorityListing"],
+  relationships=["PawPoints"] },
+  Notice={ inherits=[],
+  actions=["publish",
+  "archive",
+  "comment"],
+  relationships=["User"] }
+)
+---
